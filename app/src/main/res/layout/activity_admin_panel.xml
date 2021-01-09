@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.hrmenu.admin.AdminPanelActivity">
+    <Button
+        android:id="@+id/recom"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recommendations For Position"/>
+    <TextView
+        android:text="Departments"
+        android:paddingVertical="2dp"
+        android:paddingHorizontal="8dp"
+        style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/dep_chip_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+    <TextView
+        android:paddingVertical="2dp"
+        android:paddingHorizontal="8dp"
+        android:text="Positions"
+        style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/pos_chip_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+    <com.evrencoskun.tableview.TableView
+        android:background="@color/unselected_background_color"
+        android:id="@+id/table_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:allow_click_inside_cell="true"
+        app:allow_click_inside_column_header="true"
+        app:allow_click_inside_row_header="true"
+        app:column_header_height="@dimen/table_view_cell_height"
+        app:row_header_width="@dimen/table_view_row_header_width"
+        app:selected_color="@color/selected_background_color"
+        app:shadow_color="@color/shadow_background_color"
+        app:unselected_color="@color/unselected_background_color"
+        app:separator_color="@color/separator_color"/>
+</LinearLayout>

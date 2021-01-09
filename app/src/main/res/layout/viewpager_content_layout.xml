@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/initials_circle"
+        android:layout_margin="4dp"
+        android:layout_width="56dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="28dp"
+        android:layout_height="56dp">
+        <TextView
+            android:text="AA"
+            android:id="@+id/tv_initials"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

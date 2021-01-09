@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#536DFE</color>
+    <color name="colorPrimaryDark">#231743</color>
+    <color name="colorAccent">#64FFDA</color>
+    <color name="colorAccentAlpha">#0564FFDA</color>
+
+    <color name="cell_background_color">#ffffff</color>
+    <color name="header_line_color">#0a0a0a</color>
+    <color name="table_view_default_text_color">#0a0a0a</color>
+    <color name="selected_background_color">#15a4fa</color>
+    <color name="unselected_background_color">#00328093</color>
+    <color name="shadow_background_color">#28415f</color>
+    <color name="unselected_header_background_color">#27435B</color>
+
+    <color name="unselected_text_color">#90A4BD</color>
+    <color name="selected_text_color">#ffffff</color>
+    <color name="separator_color">#273e5b</color>
+</resources>

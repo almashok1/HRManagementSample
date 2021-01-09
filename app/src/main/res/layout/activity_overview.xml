@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".view.hrmenu.employee.OverviewActivity">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextAppearance.MaterialComponents.Headline1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/welcome_back"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_first_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.MaterialComponents.Headline5"
+                        android:text="Almas"
+                        android:textSize="22sp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_position"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_width="wrap_content"
+                    android:text="Project Manager"
+                    android:textSize="16sp"
+                    style="@style/TextAppearance.MaterialComponents.Headline3"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.card.MaterialCardView>
+            <Button
+                android:id="@+id/pos_recom"
+                android:layout_marginTop="16dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="New Job Recommendations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView
+                    android:backgroundTint="#80D8FF"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:minHeight="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_margin="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:text="@string/absences"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_margin="10dp"
+                            android:id="@+id/tv_absences"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_weight="1"
+                    android:backgroundTint="#B388FF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:minHeight="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_margin="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:text="Late Last 30 Days"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_margin="10dp"
+                            android:id="@+id/tv_dayslatelast30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:text="15"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView
+                    android:backgroundTint="#8C9EFF"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:minHeight="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_margin="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="Special Projects"
+                            style="@style/TextAppearance.MaterialComponents.Headline5"/>
+
+                        <TextView
+                            android:layout_margin="10dp"
+                            android:id="@+id/tv_special_projects"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:text="15"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:backgroundTint="#FF9E80"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:minHeight="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_margin="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:text="Last Review Date"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_margin="10dp"
+                            android:id="@+id/tv_last_review"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:text="2/27/2019"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Satisfaction"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.card.MaterialCardView
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <View
+                        android:id="@+id/view_satisfaction"
+                        android:layout_height="match_parent"
+                        android:layout_width="300dp"
+                        android:background="@color/colorPrimary"
+                        />
+                    <TextView
+                        android:id="@+id/tv_satisfaction"
+                        android:layout_gravity="center"
+                        style="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:text="4/5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Colleagues"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:id="@+id/colleges"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
